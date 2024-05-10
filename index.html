@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta para mi Mama </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/mom.png" alt="Logo">
+        </div>
+    </header>
+    <div class="container">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Feliz Día de la Madre MAMA </h1>
+                </div>
+                <div class="card-body">
+                    <p>Mamá, eres la luz que ilumina mi camino, 
+                        la fuerza que me impulsa a seguir adelante y el amor incondicional
+                         que me hace sentir seguro y amado cada día.</p>
+                    <div class="image-container">
+                        <img src="https://source.unsplash.com/random/400x300/?mother" alt="Imagen de la Madre">
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p>Te amo con todo mi corazón.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h1>Gracias, Mamá</h1>
+                </div>
+                <div class="card-body">
+                    <p>Mamá, cada día me siento más afortunado por tenerte en mi vida y ser tu hijo. 
+                        - Te amo tanto que quiero que el mundo entero sepa lo buena que eres.</p>
+                    <div class="image-container">
+                        <img src="https://source.unsplash.com/random/400x300/?mother-love" alt="Imagen de la Madre">
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p>Eres la mejor mamá del mundo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer> 
+        <p>&copy; codigo creado por ---clever Juarez--
+            no copiar sin permiso </p>
+    </footer>  
+    <audio id="background-music" autoplay loop>
+        <source src="img/Y2meta.app - Los Bukis - Te amo, mamá _ Lyric video (320 kbps).mp3" type="audio/mpeg">
+    </audio>
+    <button id="volume-up">Aumentar Volumen</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('background-music');
+            audio.volume = 0.2;
+
+            const volumeUpBtn = document.getElementById('volume-up');
+            volumeUpBtn.addEventListener('click', function() {
+                audio.volume += 9.1;
+                if (audio.volume > 9) {
+                    audio.volume = 9;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
